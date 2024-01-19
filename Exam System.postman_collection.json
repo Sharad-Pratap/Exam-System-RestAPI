@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "e84ce171-4a05-4acb-9bee-1d20dfa1a147",
+		"name": "Exam System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32334614"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"sharad@gmail.com\",\n    \"password\" : \"123\"\n    \n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createExam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Sample Exam\",\n  \"durationMinutes\": 60,\n  \"questionsData\": [\n    {\n      \"text\": \"Question 1\",\n      \"options\": [\n        { \"text\": \"Option 1\", \"isCorrect\": true },\n        { \"text\": \"Option 2\", \"isCorrect\": false }\n      ]\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/create-exam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"create-exam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "examStarted",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"examId\": \"65aa4f61d80db91330387c01\",\n  \"studentResponses\": [\n    {\n      \"questionNumber\": 1,\n      \"chosenOption\": \"A\"\n    },\n    {\n      \"questionNumber\": 2,\n      \"chosenOption\": \"X\"\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/start-exam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"start-exam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resumeExam",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
