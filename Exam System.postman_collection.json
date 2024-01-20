@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "e84ce171-4a05-4acb-9bee-1d20dfa1a147",
+		"_postman_id": "1e196e50-a0f2-4372-ad9e-8a2870f274b4",
 		"name": "Exam System",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "32334614"
+		"_exporter_id": "28416929"
 	},
 	"item": [
 		{
@@ -94,7 +94,36 @@
 			"response": []
 		},
 		{
-			"name": "examStarted",
+			"name": "startExam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"examId\": \"65aa4f61d80db91330387c01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/start-exam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"start-exam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submit",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -119,14 +148,6 @@
 						"start-exam"
 					]
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "resumeExam",
-			"request": {
-				"method": "POST",
-				"header": []
 			},
 			"response": []
 		}
