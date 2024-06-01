@@ -34,13 +34,14 @@ The Online Exam System is a web application designed to facilitate the creation,
 
 - Navigate to the registration page to create a new account.
 - Sign in to access the examiner or student dashboard.
-- Examiner Dashboard
+
+**Examiner Dashboard**
 
 - Create new exams by adding questions and multiple-choice answers.
 - Set the duration for each exam.
 - Start exams and manage ongoing exams.
 - View results for all students who have taken the exams.
-- Student Dashboard
+**Student Dashboard**
 
 - Start an exam to answer multiple-choice questions.
 - Leave the exam and resume later, with the remaining time displayed.
